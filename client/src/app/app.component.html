@@ -1,0 +1,17 @@
+<div>
+  <h1>JSON Table App</h1>
+  <app-file-list
+    (selectedFileChange)="onSelectedFileChange($event)"
+  ></app-file-list>
+
+  <app-table-list
+    *ngIf="selectedFile"
+    [selectedFile]="selectedFile"
+    (selectedTableChange)="onSelectedTableChange($event)"
+  ></app-table-list>
+
+  <app-table-details
+    *ngIf="selectedTable"
+    [selectedTable]="selectedTable"
+  ></app-table-details>
+</div>

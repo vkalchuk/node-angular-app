@@ -1,0 +1,6 @@
+<h2>File List</h2>
+<ul>
+  <li *ngFor="let file of files">
+    <a href="javascript:void(0)" (click)="selectFile(file)">{{ file }}</a>
+  </li>
+</ul>
